@@ -3,12 +3,12 @@ class Solution:
         n = len(nums)
         l = 0
         r = k - 1
-        s = 0
+        s = float('-inf')
 
         while r < n:
             s = max(s, sum(nums[l: r+1]))
             r += 1
             l += 1
-            
+
         return s / k
         
