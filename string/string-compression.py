@@ -19,6 +19,5 @@ class Solution:
                     write += 1
             
             l = r
-            r += 1
         
         return write
