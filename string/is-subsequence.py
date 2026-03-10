@@ -10,6 +10,7 @@ class Solution:
                 t0 += 1
             if t0 != tn:
                 s0 += 1
+                t0 += 1
             else:
                 break
         return True if s0 == sn else False
