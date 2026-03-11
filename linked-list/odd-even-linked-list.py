@@ -7,7 +7,7 @@ class Solution:
     def oddEvenList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         odd = head
         even = even_start = head.next
-        while odd and even:
+        while even and even.next:
             odd.next = even.next
             odd = odd.next
             even.next = odd.next
