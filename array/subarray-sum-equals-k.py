@@ -5,6 +5,6 @@ class Solution:
         s = ans = 0
         for x in nums:
             s += x
-            cnt[s] += 1
             ans += cnt[s-k]
+            cnt[s] += 1
         return ans
