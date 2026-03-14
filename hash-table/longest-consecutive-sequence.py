@@ -1,6 +1,6 @@
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
-        if nums is None:
+        if not nums:
             return 0
         st = set(nums)
         ans = 1
