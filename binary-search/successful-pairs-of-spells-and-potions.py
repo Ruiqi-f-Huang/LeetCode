@@ -13,7 +13,7 @@ class Solution:
             return n - left
 
         ans  = [] * len(spells)
-        products = sorted(products)
+        potions = sorted(potions)
         for x in spells:
             products = [x * y for y in potions]
             num = find(products, success)
