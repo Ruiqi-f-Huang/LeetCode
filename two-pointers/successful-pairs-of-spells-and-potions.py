@@ -13,9 +13,9 @@ class Solution:
             return n - left
 
         ans  = [] * len(spells)
+        products = sorted(products)
         for x in spells:
             products = [x * y for y in potions]
-            products = sorted(products)
             num = find(products, success)
             ans.append(num)
         return ans
